@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background-color:#333;
+    color: white;
+  }
+
+
+input[type=text]{
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+  .me{
+    border-radius: 40px;
+  }
+
+  .grid-item{
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .footer{
+    background-color: #333;
+  }
+
+  .general{
+    display: flex;
+  }
+  .grid-container{
+    margin-left: 500px;
+    margin-top: 40px;
+    justify-content: space-around;
+  }
+
+  #name{
+    position: absolute;
+    top:20%;
+    left:20%
+  }
+
+  #mail{
+    position: absolute;
+    top:30%;
+    left:20%
+  }
+
+  #message{
+    position: absolute;
+    top:40%;
+    left:20%
+  }
+  
+  /* img:hover{
+    -webkit-filter: blur(5px);
+  filter: blur(5px);
+  } */
+
+  .photo:hover{
+    transform: scale(1.2);
+    border: 2px solid black;
+  }
+  .photo{
+    margin-top: 71px;
+    margin-left: 36px;
+    margin-bottom: 30px;
+  }
+
+
+  #click {
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    border-radius: 46px;
+}
+  #click:hover{
+    background-color:green;
+  }
+
+  #general {
+    background-color: #1c2c3a;
+    color: white;
+    width: 50%;
+}
+
+h4{
+  color: white;
+}
+  #about {
+  background-color: #1c2c3a;
+  color: white;
+  width: 100%;
+}
+
+p{
+  color: white;
+}
+  #trivia {
+    background-color: #1c2c3a;
+    color: white;
+    width: 50%;
+}
+.footer{
+  color:white;
+  height: 80px;
+  margin-top: 9px;
+}
+.footer:hover{
+  background-color: white;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  margin-top: 13px;
+ 
+}
+.icon:hover{
+  transform: scale(2);
+}
+.picture:hover{
+  transform: scale(1.8);
+}
+
+  #btn-me {
+    height: 50px;
+    width: 50%;
+    background-color: #051d31;
+    color: white;
+}
+
+#btn-about {
+  height: 50px;
+  width: 100%;
+  background-color: #051d31;
+  color: white;
+}
+
+  #btn-me:hover{
+    background-color: rgb(0, 81, 128);
+  }
+  #btn-trivia {
+    height: 50px;
+    width: 50%;
+    background-color: #051d31;
+    color: white;
+}
+
+  #btn-trivia:hover{
+    background-color:rgb(0, 81, 128);
+  }
+
+  h2{
+    position: absolute;
+    top: -5%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+  }
+
+  .technology{
+    display: flex;
+    background-color: #3092ab;
+    justify-content: space-around;
+  }
+
+  .web{
+    filter: blur(4px)
+  }
+
+  .container{
+    position: relative;
+  }
+
+  h3{
+  text-align: center;
+  }
+
+
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  } */
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
