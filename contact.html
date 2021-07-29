@@ -2,9 +2,28 @@
 <head>
     <title>Moja strona</title>
     <link href="index.css" rel="stylesheet">
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
     <meta charset="UTF-8">
 </head>
 <body>
+  <script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "marekw1996@gmail.com",
+        Password: "Winiarski1996",
+        To: 'marekw1996@gmail.com',
+        From: "marekw1996@gmail.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
   <div>
     <div class="topnav">
         <a href="./index.html">Home</a>
@@ -14,13 +33,14 @@
       </div>
     <div style="display: flex; font-size: 20px;">
       <div class="container">
-        <form>
+        <form method="POST">
         <input id="name" placeholder="Imie i nazwisko" type="text">
         <input id="mail" placeholder="E-mail" type="text">
         <input id="message" placeholder="Write message" type="text">
-        </form>
+        <input type="button" onclick="sendEmail()" value="*" id="click">  
+      </form>
         <img name="photo" src="./images/iphone-160307_1280.png" alt="marek" height="500px" width="300px">
-        <button id="click"></button>
+       
       </div>
         <ul id="contact">
             <li>Name: Marek</li>
