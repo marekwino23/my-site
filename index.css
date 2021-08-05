@@ -18,8 +18,20 @@
     box-sizing: border-box;
   }
 
+  .footer-contact{
+    color:white;
+    height: 80px;
+    background-color: #333;
+    margin-top: 15%;
+  }
+
+  #contact{
+    width: 20%;
+  }
+
   #me{
     border-radius: 40px;
+    height: 300px;
   }
 
   .general {
@@ -96,6 +108,14 @@
     color:white;
     height: 80px;
     background-color: #333;
+  }
+
+
+  .footer-project{
+    color:white;
+    height: 80px;
+    background-color: #333;
+    margin-top: 107%;
   }
 
   .icon{
@@ -211,6 +231,10 @@
     .topnav a {
       float: none;
       width: 100%;
+    }
+    #me{
+      border-radius: 40px;
+      height: 300px;
     }
     .box{
       height: 60px;
