@@ -27,6 +27,7 @@
 
   #contact{
     width: 20%;
+    margin-left: -10px;
   }
 
   #me{
@@ -57,7 +58,15 @@
   }
 
   .photo:hover {
-    transform: scale(1.2);
+    transform: scale(3);
+    border: 2px solid black;
+  }
+  .photo1:hover {
+    transform: scale(2);
+    border: 2px solid black;
+  }
+  .photo1 {
+    margin-left: 29px;
     border: 2px solid black;
   }
   .photo {
@@ -71,7 +80,7 @@
     height: 25px;
     position: absolute;
     top: 90%;
-    left: 45%;
+    left: 42%;
     border-radius: 46px;
   }
   #click:hover {
@@ -169,11 +178,12 @@
     color: white;
   }
 
-  .technology {
-    display: flex;
+  .grid-container {
+    display: grid;
     background-color: #3092ab;
-    justify-content: space-around;
     height: 340px;
+    grid-template-columns: auto auto auto;
+    font-size: 15px;
   }
 
   .web {
@@ -231,6 +241,10 @@
     .topnav a {
       float: none;
       width: 100%;
+    }
+    .photo:hover {
+      transform: scale(2);
+      border: 2px solid black;
     }
     #me{
       border-radius: 40px;
