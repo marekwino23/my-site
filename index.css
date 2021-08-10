@@ -97,14 +97,17 @@
     color: white;
   }
 
-  #about {
+  .about {
   background-color: #1c2c3a;
   color: white;
+  display: flex;
   width: 100%;
   }
 
   p{
     color: white;
+    margin-left: 9px;
+    font-size: 13px;
   }
 
   #trivia {
@@ -118,13 +121,19 @@
     height: 80px;
     background-color: #333;
   }
-
-
   .footer-project{
     color:white;
     height: 80px;
     background-color: #333;
     margin-top: 107%;
+  }
+  .footer-me{
+    color:white;
+    height: 80px;
+    background-color: #333;
+    margin-top: 0%;
+    display: flex; 
+    justify-content: space-around
   }
 
   .icon{
@@ -212,9 +221,9 @@
   text-align: center;
   }
 
-
   .header h1 {
     font-size: 50px;
+    text-align: center;
   }
   
   .topnav {
