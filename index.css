@@ -145,7 +145,7 @@
   .icon:hover{
     transform: scale(1.5);
   }
-  img:hover{
+  .pic:hover{
     filter: blur(3px);
   }
 
