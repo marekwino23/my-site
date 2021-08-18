@@ -28,15 +28,23 @@
   #contact{
     width: 20%;
     margin-left: -10px;
+    list-style-type: disclosure-closed
   }
 
   #me{
     border-radius: 40px;
-    height: 300px;
+    height: 260px;
   }
 
   .general {
     display: flex;
+  }
+
+  .portfolio{
+    display: flex; 
+    margin-top: 75px; 
+    justify-content: space-around;
+    margin-left: -36px;
   }
 
   #name {
@@ -62,7 +70,7 @@
     border: 2px solid black;
   }
   .photo1:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     border: 2px solid black;
   }
   .photo1 {
@@ -105,6 +113,12 @@
   }
 
   p{
+    color: white;
+    margin-left: 9px;
+    font-size: 13px;
+  }
+
+  .desc{
     color: white;
     margin-left: 9px;
     font-size: 13px;
@@ -260,7 +274,7 @@
     }
     #me{
       border-radius: 40px;
-      height: 300px;
+      height: 260px;
     }
     .box{
       height: 60px;
