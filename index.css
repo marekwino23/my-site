@@ -21,6 +21,7 @@
   .footer-contact{
     color:white;
     height: 80px;
+    position: relative;
     background-color: #333;
     margin-top: 15%;
   }
@@ -65,10 +66,10 @@
     left:20%
   }
 
-  .photo:hover {
+  /* .phone:hover {
     transform: scale(3);
     border: 2px solid black;
-  }
+  } */
   .photo1:hover {
     transform: scale(1.5);
     border: 2px solid black;
@@ -77,17 +78,17 @@
     margin-left: 29px;
     border: 2px solid black;
   }
-  .photo {
-    margin-top: 71px;
-    margin-left: 36px;
+  .phone {
+    margin-top: 2px;
+    margin-left: -2px;
     margin-bottom: 30px;
-  }
+}
 
   #click {
     width: 30px;
     height: 25px;
     position: absolute;
-    top: 90%;
+    top: 84%;
     left: 42%;
     border-radius: 46px;
   }
@@ -123,6 +124,10 @@
     margin-left: 9px;
     font-size: 13px;
   }
+  
+  #contact>::marker{
+    color:rgb(36, 184, 36)
+  }
 
   #trivia {
     background-color: #1c2c3a;
@@ -139,7 +144,20 @@
     color:white;
     height: 80px;
     background-color: #333;
-    margin-top: 107%;
+    margin-top: 62%;
+  }
+
+  @keyframes slideDown {
+    0% { left: 0; top: 0;}
+    25% { left: 0; top: 80px;}
+  }
+
+  .windows {
+    position: relative;
+    display: flex;
+    margin-top: 92px;
+    animation: slideDown 4s;
+    justify-content: space-around;
   }
   .footer-me{
     color:white;
@@ -203,6 +221,16 @@
     font-size: 20px;
     color: white;
   }
+  .laptop {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 6px;
+}
+
+.laptop:hover{
+  transform: scale(1.3);
+}
 
   .grid-container {
     display: grid;
@@ -210,6 +238,13 @@
     height: 340px;
     grid-template-columns: auto auto auto;
     font-size: 15px;
+  }
+
+  .logo{
+    position:fixed;
+    z-index: 1;
+    margin-left: 84px;
+    font-size: 20px;
   }
 
   .web {
@@ -223,7 +258,7 @@
     position: absolute;
     width: 20%;
     left: 40%;
-    top: 25%;
+    top: 46%;
   }
 
   .github:hover{
@@ -268,13 +303,25 @@
       float: none;
       width: 100%;
     }
-    .photo:hover {
-      transform: scale(2);
+    .phone:hover {
+      transform: scale(3);
       border: 2px solid black;
+    }
+    .photo{
+      margin-top: 40%;
+    }
+    .logo{
+      position:fixed;
+      z-index: 1;
+      margin-left: 26px;
+      font-size: 20px;
     }
     #me{
       border-radius: 40px;
       height: 260px;
+    }
+    .picture:hover{
+      transform: scale(3);
     }
     .box{
       height: 60px;
